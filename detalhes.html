@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Imóvel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Detalhes do Imóvel</h1>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="imoveis.html">Imóveis</a>
+        <a href="index.html#servicos">Serviços</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="detalhes-imovel">
+    
+    <img src="https://via.placeholder.com/800x400" class="foto-imovel">
+
+    <h2>Apartamento T2 – Leiria</h2>
+    <p class="preco">800€ / mês</p>
+
+    <h3>Descrição</h3>
+    <p>
+        Apartamento T2 moderno, situado numa zona tranquila de Leiria. 
+        Composto por sala ampla, cozinha equipada, dois quartos, 
+        casa de banho completa e arrecadação.
+    </p>
+
+    <h3>Características</h3>
+    <ul>
+        <li>Área: 90 m²</li>
+        <li>2 quartos</li>
+        <li>Cozinha equipada</li>
+        <li>Vistas desafogadas</li>
+        <li>Perto de transportes e comércio</li>
+    </ul>
+
+    <a class="btn" href="contacto.html">Entrar em contacto</a>
+
+</section>
+
+</body>
+</html>
+/* Página de detalhes do imóvel */
+.detalhes-imovel {
+    padding: 40px;
+    width: 80%;
+    margin: auto;
+}
+
+.foto-imovel {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.detalhes-imovel ul {
+    list-style: square;
+    margin-left: 30px;
+}
+
+.detalhes-imovel h3 {
+    margin-top: 25px;
+}

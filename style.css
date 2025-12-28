@@ -1,0 +1,160 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* Secção principal */
+.hero {
+    background: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #ffcc00;
+    color: #222;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+/* Página de imóveis */
+.lista-imoveis {
+    padding: 40px;
+    text-align: center;
+}
+
+.grade-imoveis {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.imovel-card {
+    background: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.imovel-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imovel-card h3 {
+    margin: 10px 0 5px;
+}
+
+.imovel-card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.imovel-card .btn {
+    margin-top: 10px;
+    display: inline-block;
+}
+/* Página de contacto */
+.contacto {
+    width: 60%;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.contacto button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background: #e6b800;
+}
+/* Rodapé */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* RESPONSIVO PARA TELEMÓVEL */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .cards,
+    .grade-imoveis {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .imovel-card {
+        width: 90%;
+    }
+
+    .contacto {
+        width: 90%;
+    }
+}
